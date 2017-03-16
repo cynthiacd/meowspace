@@ -12,6 +12,7 @@
 /*you can use px for heights cause you don;t have java script yet*/
 /*use em for fonts*/
 
+
 header {
   background-color: Gainsboro;
 
@@ -24,7 +25,7 @@ header {
 header h2 {
   margin: 0;
   padding: 0;
-  /*float: left;*/
+
   width: 30%;
   display: inline-block;
   margin-left: 10%;
@@ -35,7 +36,6 @@ header h2 {
   border: solid;
 }
 
-/*how did that link turn purple?*/
 #top_title a {
   color: Purple;
   text-decoration: none;
@@ -65,12 +65,11 @@ header nav ul {
 
 header nav li {
   display: inline-block;
-  /*display: inline;*/
+  float: right;
+
   margin: 0;
   padding: 0;
-  /*how to get percentage with this*/
   padding-left: 7%;
-  float: right;
 }
 
 header nav a {
@@ -91,7 +90,6 @@ a:hover {
 /*main styling*/
 h1 {
   margin: 0;
-
   height: 500px;
   padding-top: 30%;
 
@@ -99,30 +97,29 @@ h1 {
   background-size: 100% 100%;
   background-position: center;
 
-  text-align: center;
   font-size: 5em;
 }
 
 /*text size and font*/
 h1, h2 {
   font-family: 'Julius Sans One' ;
+  text-align: center;
   /*font-size: 40px;*/
 }
 
 section h2 {
-  text-align: center;
   font-size: 3em;
-  width: 100%;
 
   border-top: solid;
   border-bottom: solid;
 
+  width: 100%;
   margin: 0;
   margin-bottom: 3%;
   margin-top: 3%;
 }
 
-main section h3 {
+section h3 {
   /*font-family: 'Exo';*/
   /*font-family: 'Amatic SC';*/
   font-family: 'Poiret One';
@@ -145,31 +142,22 @@ p {
   font-size: 1.3em;
  }
 
-main section h2 {
-   font-size: 3em;
-   /*margin: 0;*/
- }
-
 main section {
   clear: both;
-  margin: 0;
 }
 
 article {
   float: left;
-
-  border: solid;
-  /*i dont like the rounded corners...*/
-  /*border-radius: 2%;*/
-
+  height: 350px;
+  width: 23%;
   padding: 1.1% 1.1% 1.1% 1.1%;
   /*margin: 2.2% 2.2% 2.2% 2.2%;*/
   margin: 0% 3% 3% 2%;
   margin-left: 4%;
 
-  /*height: 10%;*/
-  height: 350px;
-  width: 23%;
+  border: solid;
+  /*i dont like the rounded corners...*/
+  /*border-radius: 2%;*/
 
   background-color: Gainsboro;
 }
@@ -182,15 +170,12 @@ article {
   width: 100%;
   text-align: left;
   color: Black;
-
 }
 
 .posts a {
   color: red;
   font-family: 'Raleway';
   text-decoration: none;
-
-  /*border: solid;*/
 }
 
 .posts a:hover {
@@ -202,6 +187,7 @@ article .learn {
 
   margin: 0;
   padding: 0;
+
   /*I don't like the borders around learn more either..*/
   /*border: solid;*/
   /*height: 30px;*/
@@ -232,24 +218,18 @@ img {
   color: DarkGreen;
   text-align: left;
 
-  margin: 0;
-  padding: 0;
-  position: inline;
-  padding-left: 5%;
   float: left;
   width: 50%;
+  margin: 0;
+  padding: 0;
+  padding-left: 5%;
 }
-
 
 /*footer syling*/
 footer {
-  float: bottom;
-  clear: both;
   background-color: #c5b2c5;
   margin: 0;
-
   width: 100%;
-  height: 200px;
 }
 
 div {
@@ -271,9 +251,8 @@ h4, p#disclaimer {
 footer nav ul {
   float: right;
   list-style-type: square;
-  /*padding: 10px 10px 10px 10px;*/
-  margin: 0;
 
+  margin: 0;
   margin-top: 4%;
   margin-right: 25%;
   padding: 0;
