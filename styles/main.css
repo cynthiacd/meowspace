@@ -255,6 +255,7 @@ footer {
 div {
   position: inline-block;
   width: 40%;
+  margin-left: 12%;
   padding-top: 3%;
   padding-left: 8%;
   padding-bottom: 5%;
@@ -265,8 +266,6 @@ h4, p#disclaimer {
   font-size: .9em;
 
   margin: 0;
-  /*width: 40%;*/
-  margin-left: 3.5%;
 }
 
 footer nav ul {
@@ -278,21 +277,17 @@ footer nav ul {
   margin-top: 4%;
   margin-right: 25%;
   padding: 0;
-  /*border: solid: blue;*/
 }
 
 footer li {
-  /*text-decoration: none;*/
   margin: 0;
-  margin-left: 2%;
   padding: 0;
-
 }
 
 footer a {
   text-decoration: none;
   color: red;
+  font-size: 1.3em;
   margin: 0;
   padding: 0;
-  /*border: solid;*/
 }
