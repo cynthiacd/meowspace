@@ -20,20 +20,22 @@ header {
   height: 100px;
   margin: 0;
   position: fixed;
+
+  border-bottom: solid;
+  /*border-top: solid;*/
 }
 
 header h2 {
   margin: 0;
   padding: 0;
 
-  width: 30%;
+  width: 20%;
   display: inline-block;
-  margin-left: 10%;
-  margin-top: 1%;
+  margin-left: 9%;
+  margin-top: 2%;
 
   font-size: 2.5em;
   font-weight: bold;
-  border: solid;
 }
 
 #top_title a {
@@ -48,7 +50,6 @@ header h2 {
 
 /*navigaton styling*/
 header nav ul {
-
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -56,11 +57,8 @@ header nav ul {
 
   float: right;
   width: 40%;
-
-  margin-top: 1%;
-  margin-right: 10%;
-
-  border: solid;
+  margin-right: 11%;
+  margin-top: 2.4%;
 }
 
 header nav li {
@@ -68,19 +66,23 @@ header nav li {
   float: right;
 
   margin: 0;
+
+  margin-top: 2.2%;
   padding: 0;
   padding-left: 7%;
 }
 
 header nav a {
-  color: blue;
-  font-size: 2.5em;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 1.5em;
   display: inline-block;
 
   color: red;
   font-family: 'Raleway';
   text-decoration: none;
+
 }
 
 a:hover {
@@ -98,6 +100,9 @@ h1 {
   background-position: center;
 
   font-size: 5em;
+
+  border-top: solid;
+  border-bottom: solid;
 }
 
 /*text size and font*/
@@ -215,7 +220,6 @@ img {
 }
 
 .club p {
-  color: DarkGreen;
   text-align: left;
 
   float: left;
@@ -236,16 +240,16 @@ div {
   position: inline-block;
   width: 40%;
   margin-left: 12%;
+
   padding-top: 3%;
-  padding-left: 8%;
   padding-bottom: 5%;
 }
 
 h4, p#disclaimer {
   display: inline;
-  font-size: .9em;
-
   margin: 0;
+
+  font-size: .9em;
 }
 
 footer nav ul {
