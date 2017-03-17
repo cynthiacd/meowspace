@@ -152,19 +152,19 @@ main section {
 }
 
 article {
-  float: left;
+  /*float: left;*/
+  display: inline-block;
   height: 350px;
   width: 23%;
-  padding: 1.1% 1.1% 1.1% 1.1%;
-  /*margin: 2.2% 2.2% 2.2% 2.2%;*/
   margin: 0% 3% 3% 2%;
   margin-left: 4%;
+  padding: 1.1% 1.1% 1.1% 1.1%;
 
-  border: solid;
+  border: solid grey;
   /*i dont like the rounded corners...*/
-  /*border-radius: 2%;*/
+  /*border-radius: 1.3em;*/
 
-  background-color: Gainsboro;
+  background-color: #ebebeb;
 }
 
 .posts p {
@@ -181,6 +181,11 @@ article {
   color: red;
   font-family: 'Raleway';
   text-decoration: none;
+
+  /*I don't like the borders around the learn more but can uncomment code below to include this styling*/
+  /*border: solid Darkgrey;*/
+  /*border-radius: 1.3em;*/
+  /*padding: 1.5% 1.5% 1.5% 1.5%;*/
 }
 
 .posts a:hover {
@@ -189,13 +194,6 @@ article {
 
 article .learn {
   text-align: center;
-
-  margin: 0;
-  padding: 0;
-
-  /*I don't like the borders around learn more either..*/
-  /*border: solid;*/
-  /*height: 30px;*/
 }
 
 section:last-of-type h2 {
@@ -231,7 +229,8 @@ img {
 
 /*footer syling*/
 footer {
-  background-color: #c5b2c5;
+  background-color: #dcd1dc;
+  /*background-color: #c5b2c5;*/
   margin: 0;
   width: 100%;
 }
@@ -258,19 +257,22 @@ footer nav ul {
 
   margin: 0;
   margin-top: 4%;
-  margin-right: 25%;
+  margin-right: 11%;
   padding: 0;
 }
 
 footer li {
   margin: 0;
   padding: 0;
+  padding-top: 13%;
 }
 
 footer a {
+  font-family: 'Raleway';
   text-decoration: none;
   color: red;
   font-size: 1.3em;
+
   margin: 0;
   padding: 0;
 }
