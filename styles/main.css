@@ -8,40 +8,36 @@
 
 /*header syling*/
 
-/*should be using more dynamic spacing - not px - try using percentages*/
-/*you can use px for heights cause you don;t have java script yet*/
+/*should be using more dynamic spacing - not px - try to use percents
+/*you can use px for heights cause don't have all the tools yet
 /*use em for fonts*/
 
 
 header {
+  /*put these things in alpha order*/
   background-color: Gainsboro;
-
-  width: 100%;
+  border-bottom: solid;
   height: 100px;
   margin: 0;
   position: fixed;
-
-  border-bottom: solid;
-  /*border-top: solid;*/
+  width: 100%;
 }
 
 header h2 {
-  margin: 0;
-  padding: 0;
-
-  width: 20%;
   display: inline-block;
-  margin-left: 9%;
-  margin-top: 2%;
-
   font-size: 2.5em;
   font-weight: bold;
+  margin: 0;
+  margin-left: 9%;
+  margin-top: 2%;
+  padding: 0;
+  width: 20%;
 }
 
 #top_title a {
-  color: Purple;
-  text-decoration: none;
+  color: Indigo;
   font-family: 'Poiret One';
+  text-decoration: none;
 }
 
 #top_title a:hover {
@@ -50,39 +46,34 @@ header h2 {
 
 /*navigaton styling*/
 header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: inline-block;
-
   float: right;
-  width: 40%;
+  list-style-type: none;
+  margin: 0;
   margin-right: 11%;
   margin-top: 2.4%;
+  padding: 0;
+  width: 40%;
 }
 
 header nav li {
   display: inline-block;
   float: right;
-
   margin: 0;
-
   margin-top: 2.2%;
   padding: 0;
   padding-left: 7%;
 }
 
 header nav a {
+  color: red;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: 'Raleway';
+  font-weight: bold;
   margin: 0;
   padding: 0;
-
-  font-size: 1.5em;
-  display: inline-block;
-
-  color: red;
-  font-family: 'Raleway';
   text-decoration: none;
-
 }
 
 a:hover {
@@ -91,90 +82,86 @@ a:hover {
 
 /*main styling*/
 h1 {
-  margin: 0;
-  height: 500px;
-  padding-top: 30%;
-
   background-image: url('../assets/hero.jpg');
   background-size: 100% 100%;
   background-position: center;
-
-  font-size: 5em;
-
-  border-top: solid;
   border-bottom: solid;
+  border-top: solid;
+  font-size: 5em;
+  height: 500px;
+  margin: 0;
+  padding-top: 30%;
 }
 
 /*text size and font*/
-h1, h2 {
+h1,
+h2 {
   font-family: 'Julius Sans One' ;
   text-align: center;
-  /*font-size: 40px;*/
 }
 
+/*popular posts styling*/
 section h2 {
-  font-size: 3em;
-
   border-top: solid;
   border-bottom: solid;
-
-  width: 100%;
+  font-size: 3em;
   margin: 0;
   margin-bottom: 3%;
   margin-top: 3%;
+  width: 100%;
 }
 
-section h3 {
-  /*font-family: 'Exo';*/
-  /*font-family: 'Amatic SC';*/
+h3 {
+  border-bottom: solid;
   font-family: 'Poiret One';
-  /*font-family: 'Alegreya Sans SC';*/
   font-size: 1.4em;
   text-align: center;
-
-  border-bottom: solid;
 }
 
 /*this is font family and size for all text */
 p {
-
-  /*font-family: 'Ubuntu Condensed';*/
-  /*font-family: 'Quattrocento';*/
-  /*font-family: 'Jura';*/
-  /*font-family: 'Raleway';*/
   font-family: 'Josefin Slab';
-  /*font-family: 'Roboto Mono'*/
   font-size: 1.3em;
- }
+}
 
 main section {
   clear: both;
 }
 
+.posts div {
+  display: inline-block;
+  margin: 0;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  width: 100%;
+}
+
 article {
-  /*float: left;*/
+  background-color: #ebebeb;
+  border: solid;
+  border-color: grey;
+  /*i dont like the rounded corners, but un-comment code below for them*/
+  /*border-radius: 1.3em;*/
   display: inline-block;
   height: 350px;
-  width: 23%;
-  margin: 0% 3% 3% 2%;
-  margin-left: 4%;
+  /*margin: 0% 3% 3% 2%;*/
+  margin-top: ;
+  margin-bottom: 5%;
+  margin-right: 5%;
   padding: 1.1% 1.1% 1.1% 1.1%;
-
-  border: solid grey;
-  /*i dont like the rounded corners...*/
-  /*border-radius: 1.3em;*/
-
-  background-color: #ebebeb;
+  width: 24%;
 }
 
 .posts p {
-  padding: 0;
-  margin: 0;
-
-  height: 70%;
-  width: 100%;
-  text-align: left;
   color: Black;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
 }
 
 .posts a {
@@ -182,7 +169,8 @@ article {
   font-family: 'Raleway';
   text-decoration: none;
 
-  /*I don't like the borders around the learn more but can uncomment code below to include this styling*/
+  /*I don't like the borders around the links */
+  /*but if you uncomment the code below to include this styling*/
   /*border: solid Darkgrey;*/
   /*border-radius: 1.3em;*/
   /*padding: 1.5% 1.5% 1.5% 1.5%;*/
@@ -195,36 +183,48 @@ article {
 article .learn {
   text-align: center;
 }
+/*join the club styling*/
+.club {
+  display: inline-block;
+}
+.club div {
+  display: inline-block;
+  margin: 0;
+  margin-left: 5%;
+  width: 50%;
+}
+.club h2 {
+  border: none;
+  display: inline-block;
+  text-align: left;
+}
+.club p {
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
 
+img {
+  border: solid;
+  float: right;
+  height: 320px;
+  margin: 0;
+  margin-right: 5%;
+  margin-bottom: 4%;
+  width: 38%;
+}
+
+/*"everybody wants to join" the club styling*/
 section:last-of-type h2 {
   margin: 0;
-  height: 700px;
+  height: 500px;
   background-image: url('../assets/everybody.jpg');
   background-size: 100% 100%;
 
   text-align: center;
   font-size: 5em;
   padding-top: 40%;
-}
-
-img {
-  height: 320px;
-  width: 38%;
-  float: right;
-
-  border: solid;
-  margin: 0% 2% 0% 2%;
-  margin-bottom: 4%;
-}
-
-.club p {
-  text-align: left;
-
-  float: left;
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  padding-left: 5%;
 }
 
 /*footer syling*/
@@ -246,15 +246,13 @@ div {
 
 h4, p#disclaimer {
   display: inline;
-  margin: 0;
-
   font-size: .9em;
+  margin: 0;
 }
 
 footer nav ul {
   float: right;
   list-style-type: square;
-
   margin: 0;
   margin-top: 4%;
   margin-right: 11%;
@@ -268,11 +266,11 @@ footer li {
 }
 
 footer a {
-  font-family: 'Raleway';
-  text-decoration: none;
   color: red;
+  font-family: 'Raleway';
   font-size: 1.3em;
-
+  font-weight: bold;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
